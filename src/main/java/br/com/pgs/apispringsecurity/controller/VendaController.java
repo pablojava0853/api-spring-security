@@ -10,7 +10,8 @@ import java.util.List;
 @RequestMapping("api/v1/venda")
 @AllArgsConstructor
 public class VendaController {
-	private final VendaService vendaService = new VendaService();
+	
+	private final VendaService vendaService;
 
     @PostMapping
     public Venda salvar(@RequestBody Venda venda){
